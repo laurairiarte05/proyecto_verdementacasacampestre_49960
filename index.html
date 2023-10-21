@@ -1,0 +1,116 @@
+<!DOCTYPE html><!--esta etiqueta es la que indica que indica que mi pagina web esta realizada en HTML5-->
+<!--para grabar ctrl + s -->
+<html lang="es"><!--las etiquetas que tienen cierre, son etiquetas cerradas-->
+    <!--en el head van las configuraciones para el navegador-->
+    <head>
+        <!--las metas son etiquetas de configuracion-->
+        <!--Los azules son atributos-->
+        <meta charset="UTF-8"> <!--indica que el contenido está en idioma español-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--indica que un pixel es lo mismo en una pestaña de escritorio y en una de celular. Un pixel es lo mismo en cualquier tamaño de pantalla-->
+        <!--etiqueta del titulo de la pagina, aparece en la pestaña (es la unica etiqueta que ve el usuario)-->
+        <title>Verde Menta Casa Campestre</title>
+        <link rel="shortcut icon" href="./favicon.ico" type="imagen/x-icon">
+        <link rel="stylesheet" href="./CSS/estilos.css">
+    </head>
+    <!--En el body, va lo que ve el usuario en el viewport-->
+    <body>
+        <header class="header"><!--cabecera de mi sitio web-->
+            <!--el logo siempre va dentro de un ancla y siempre ese ancla debe 
+            redirigir a la página de inicio-->
+            <!--un ancla es un link que sirve para movernos entre páginas del sitio web -->
+            <div class="contenedorNav">
+                <a class="linkLogo" href="index.html">
+                    <img class="logo" src="./Assets/img/logo.png" alt="Logo">
+                </a>
+                <nav><!--navegación: enlaces-->
+                <!--ul (listas desordenadas): sirven para agrupar contenidos que tienen sentido que estén agrupados. 
+                ejemplo: una lista de compras-->
+                    <ul class="listaNav">
+                    <!--li*5 + tab = poner de una vez los 5 <li>-->
+                    <!--al mantener la tecla alt presionada, puedo selccionar varias líneas y editar en todas al tiempo-->
+                    <!--es obligatorio tener li (lista item) dentro de las listas desordenadas--> 
+                    <!--enlaces absolutos: url completa ej: https://www.google.com/ y enlaces relativos: cambia la dirección dependiendo de donde
+                    esté parado, jamás se deben usar enlaces absolutos en enlaces internos, siempre relativos-->
+                        <li class="listaItem"><a class="linkNav" href="./index.html">Inicio</a></li><!-- ./ o ../ para seleccionar la página a la que voy a ir-->
+                        <li class="listaItem"><a class="linkNav" href="./pages/historia.html">Historia</a></li>
+                        <li class="listaItem"><a class="linkNav" href="./pages/servicios.html">Servicios</a></li>
+                        <li class="listaItem"><a class="linkNav" href="./pages/conocenos.html">Conócenos</a></li>
+                        <li class="listaItem"><a class="linkNav" href="./pages/contacto.html">Contacto</a></li> 
+                    </ul>         
+                </nav>
+            </div>
+            <section class="contenidoPrincipalIndex">
+                <h1>VERDE MENTA CASA CAMPESTRE</h1>
+                <h3>La comodidad de la ciudad en el campo</h3>            
+            </section>        
+        </header>
+        <main class="main"><!--contenido principal de mi sitio web-->
+        <!--titulo principal de la pagina, tiene que haber un h1 por pagina-->            
+            <section class="tarjetasIndex">
+                <a class="cartasIndex" href="./pages/contacto.html">
+                    <div >
+                        <h2>VEN CON TU FAMILIA</h2>
+                        <img src="./Assets/img/huespedes/huespedes (2).png" alt="paquete_familia">
+                    </div>
+                </a>
+                <a class="cartasIndex" href="./pages/servicios.html">
+                    <div >
+                        <h2>MAS DE NUESTROS SERVICIOS</h2>
+                        <img src="./Assets/img/eventos/evento_matrimonio (3).png" alt="servicios">
+                    </div>
+                </a>
+            </section>
+            <section>
+                <p class="parrafoPaginaPrincipal">
+                    Verde Menta Casa Campestre es el sitio que todos soñamos. Se encuentra ubicada a los alrededores del municipio de Rivera Huila, lugar caracterizado por su fantástico clima, las famosas termales y la cercanía a Neiva, la capital del departamento. Nuestro propósito es ofrecer un momento de tranquilidad y relajación, pasar tiempo en familia y lograr desconectarnos del ruido de la ciudad. Contamos con diferentes espacios de esparcimiento como piscinas, parque infantil, gimnasio, cancha de micro fútbol y voleybol, además de diferentes estancias para disfrutar de una buena charla. También, tenemos habitaciones que se adaptan a las encesidades de nuestros huéspedes. Apuntos a ser el mejor hotel campestre del municipio de Rivera.                
+                </p>
+                <div>
+                    <button class="botonHistoria">
+                        <a href="./pages/historia.html">Más de nosotros</a>
+                    </button>
+                </div>
+                    <img src="./Assets/img/casa/casa (22).png" alt="servicios">
+            </section>
+            <section>
+                <div class="divOpiniones"><p class="opiniones">"Era más de lo que esperábamos, la casa súper chévere, cómoda y el lugar muy fresco. Nos encantó la piscina, la acomodación y sobre todo la atención prestada por José y Anyela. Súper Recomendado y muchas gracias, a ojo cerrado volveríamos allá"</p></div><!-- ./ o ../ para seleccionar la página a la que voy a ir-->
+                <div class="divOpiniones"><p class="opiniones">"Es un lugar muy familiar y acogedor, las personas a cargo son muy amables y lo hacen sentir a uno como en casa"</p></div>   
+                <div class="divOpiniones"><p class="opiniones">"Un lugar muy bello para compartir en familia, tiene diferentes ambientes, bastantes zonas verdes y se siente como en casa. 100% recomendado"</p></div>
+                <div class="divOpiniones"><p class="opiniones">"Es una casa campestre hermosa, la piscina de agua natural es de maravilla, los servicios que te ofrecen son demasiados, por otra parte la ubicación es excelente sin duda sería mi primera opción para mis próximas vacaciones"</p></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="contenedorRedesSocialesFooter">
+                <!--taget _blank: se usa para los enlaces externos, para que no se cierre mi sitio web -->
+                <a class="redesSocialesFooter" target="_blank" href="https://wa.link/f85ij1"><img src="../Assets/img/logo_whatsapp.png" alt=whatsapp"></a>
+                <a class="redesSocialesFooter" target="_blank" href="https://instagram.com/verdementa.casacampestre?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><img src="../Assets/img/logo_instagram.png" alt="instagram"></a>
+                <a class="redesSocialesFooter" target="_blank" href="https://www.facebook.com/verdementariverahuila?mibextid=LQQJ4d"><img src="../Assets/img/logo_facebook.png" alt="facebook"></a>
+            </div>
+            <div class="contenedorMapaVerdeMenta">
+                <div class="contenedorMapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15940.652933906103!2d-75.236321!3d2.7680071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b6c1811102259%3A0x60a798c7f101b57a!2sVerde%20Menta%20Casa%20Campestre%2C%20Rivera%20Huila!5e0!3m2!1ses-419!2sco!4v1696721455543!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="informacionFooter">
+                    <p class="parrafoInfoFooter">Vereda Termopilas Rivera Huila</p>
+                    <p class="parrafoInfoFooter">Cel: 3156746464</p>
+                    <p class="parrafoInfoFooter">verdementacasacampestre@gmail.com</p>
+                    <p class="parrafoInfoFooter">Horario de atención: 8am a 8pm</p>
+                    <p class="masInformacionFooter"> <a href="./pages/contacto.html">Más información</a></p>
+                </div>
+            </div>
+           
+        </footer>
+        
+    </body>
+</html>
+
+<!--para abrir el proyecto: click derecho en index.html -> reveal in file explorer (abrir ubicación) -> doble click en el archivo-->
+<!--para guardar: ctrl + s-->
+<!--para multiplicar: se escribe il (o cualquier etiqueta)*5 + tab-->
+<!--para editar en varias lineas, se seleccionan todas con la tecla alt presionada-->
+<!--iframe son etiquetas para poner contenido de youtube o spotify-->
+<!--formulario: lugar donde el usuario tiene que poner sus datos e interactuar con el sitio-->
+
+<!--CSS: hojas de estilo en cascada-->
+
+<!--Preguntas:
+las imágenes pueden ser png?-->

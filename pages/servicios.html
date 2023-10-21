@@ -1,0 +1,146 @@
+<!DOCTYPE html><!--esta etiqueta es la que indica que indica que mi pagina web esta realizada en HTML5-->
+<!--para grabar ctrl + s -->
+<html lang="es"><!--las etiquetas que tienen cierre, son etiquetas cerradas-->
+    <!--en el head van las configuraciones para el navegador-->
+    <head>
+        <!--las metas son etiquetas de configuracion-->
+        <!--Los azules son atributos-->
+        <meta charset="UTF-8"> <!--indica que el contenido está en idioma español-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--indica que un pixel es lo mismo en una pestaña de escritorio y en una de celular. Un pixel es lo mismo en cualquier tamaño de pantalla-->
+        <!--etiqueta del titulo de la pagina, aparece en la pestaña (es la unica etiqueta que ve el usuario)-->
+        <title>Galeria</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="imagen/x-icon">
+        <link rel="stylesheet" href="../CSS/estilos.css">
+    </head>
+    <!--En el body, va lo que ve el usuario en el viewport-->
+    <body>
+        <header><!--cabecera de mi sitio web-->
+            <!--el logo siempre va dentro de un ancla y siempre ese ancla debe 
+            redirigir a la página de inicio-->
+            <!--un ancla es un link que sirve para movernos entre páginas del sitio web -->
+            <a href="../index.html">
+                <img src="../Assets/img/logo.JPG" alt="Logo">
+            </a>
+            <nav><!--navegación: enlaces-->
+                <!--ul (listas desordenadas): sirven para agrupar contenidos que tienen sentido que estén agrupados. 
+                ejemplo: una lista de compras-->
+                <ul>
+                    <!--li*5 + tab = poner de una vez los 5 <li>-->
+                    <!--al mantener la tecla alt presionada, puedo selccionar varias líneas y editar en todas al tiempo-->
+                    <!--es obligatorio tener li (lista item) dentro de las listas desordenadas--> 
+                    <!--enlaces absolutos: url completa ej: google y enlaces relativos: cambia la dirección dependiendo de donde
+                    esté parado-->
+                    <li><a class="linkNav" href="../index.html">Inicio</a></li><!-- ./ o ../ para seleccionar la página a la que voy a ir-->
+                    <li><a class="linkNav" href="./historia.html">Historia</a></li>
+                    <li><a class="linkNav" href="./servicios.html">Servicios</a></li>
+                    <li><a class="linkNav" href="./conocenos.html">Conócenos</a></li>
+                    <li><a class="linkNav" href="./contacto.html">Contacto</a></li> 
+                </ul>         
+            </nav>       
+        </header>
+
+        <main><!--contenido principal de mi sitio web-->
+        <!--titulo principal de pa pagina, tiene que haber un h1 por pagina-->
+            <h1>NOS ACOMODAMOS A TUS NECESIDADES</h1>
+            <section>
+                <h2>Hospedaje</h2>
+                <!--aca va a tener un parrafo sobre lo bueno que son los productos-->
+                <p>Habitaciones con diferentes tipos de acomodación de acuerdo a sus necesidades. Incluye acceso a todas las áreas sociales de la casa, desayuno, WiFi y parqueadero</p>
+                <div>
+                    <div>
+                         <img src="../Assets/img/casa_habitaciones/hab_4personas.png" alt="hospedaje">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/casa_habitaciones/hab_5personas (3).png" alt="hospedaje">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/casa_habitaciones/hab_principal (3).png" alt="hospedaje">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/casa_habitaciones/hab_7personas (4).png" alt="hospedaje">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>Eventos</h2>
+                <!--aca va a tener un parrafo sobre lo bueno que son los productos-->
+                <p>Realizamos eventos como matrimonios, fiestas de 15, reuniones empresariales, etc. Contamos con diferentes áreas que permiten acomodarse a tus preferencias.</p>
+                <div>
+                    <div>
+                         <img src="../Assets/img/eventos/evento_cumpleaños (2).png" alt="eventos">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/eventos/evento_matrimonio (2).png" alt="eventos">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/eventos/evento_quinces (2).jpg" alt="eventos">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/eventos/evento_quinces (4).jpg" alt="eventos">
+                    </div>                    
+                </div>
+            </section>
+            <section>
+                <h2>Pasadía</h2>
+                <!--aca va a tener un parrafo sobre lo bueno que son los productos-->
+                <p>Si tu plan es pasar un día tranquilo en un lugar lleno de naturaleza, Verde Menta es el sitio ideal. Ven con tu familia y disfruta por todo un día de nuestras instalaciones.</p>
+                <div>
+                    <div>
+                         <img src="../Assets/img/huespedes/huespedes (5).jpg" alt="pasadia">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/eventos/evento_quinces.jpg" alt="pasadia">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/pet/pet.jpg" alt="pasadia">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/familia/familia (2).png" alt="pasadia">
+                    </div>                    
+                </div>
+            </section>
+            <div>
+                <button><a href="./contacto.html">Haz tu reservación</a></button>
+            </div>
+            <section>
+                <table>
+                    <caption>BENEFICIOS</caption>
+                    <tbody>
+                        <tr>
+                            <td>Pet Friendly</td>
+                            <td>Gimnasio</td>
+                            <td>Parque infantil</td>
+                            <td>Piscina</td>
+                        </tr>
+                        <tr>
+                            <td>Salón social</td>
+                            <td>Fogata</td>
+                            <td>WiFi</td>
+                            <td>Parqueadero</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>      
+        </main>
+        <footer class="footer">
+            <div class="contenedorRedesSocialesFooter">
+                <!--taget _blank: se usa para los enlaces externos, para que no se cierre mi sitio web -->
+                <a class="redesSocialesFooter" target="_blank" href="https://wa.link/f85ij1"><img src="../Assets/img/logo_whatsapp.png" alt=whatsapp"></a>
+                <a class="redesSocialesFooter" target="_blank" href="https://instagram.com/verdementa.casacampestre?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><img src="../Assets/img/logo_instagram.png" alt="instagram"></a>
+                <a class="redesSocialesFooter" target="_blank" href="https://www.facebook.com/verdementariverahuila?mibextid=LQQJ4d"><img src="../Assets/img/logo_facebook.png" alt="facebook"></a>
+            </div>
+            <div class="contenedorMapaVerdeMenta">
+                <div class="contenedorMapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15940.652933906103!2d-75.236321!3d2.7680071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b6c1811102259%3A0x60a798c7f101b57a!2sVerde%20Menta%20Casa%20Campestre%2C%20Rivera%20Huila!5e0!3m2!1ses-419!2sco!4v1696721455543!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="informacionFooter">
+                    <p class="parrafoInfoFooter">Vereda Termopilas Rivera Huila</p>
+                    <p class="parrafoInfoFooter">Cel: 3156746464</p>
+                    <p class="parrafoInfoFooter">verdementacasacampestre@gmail.com</p>
+                    <p class="parrafoInfoFooter">Horario de atención: 8am a 8pm</p>
+                    <p class="masInformacionFooter"> <a href="./pages/contacto.html">Más información</a></p>
+                </div>
+            </div>           
+        </footer>        
+    </body>
+</html>

@@ -1,0 +1,95 @@
+/*Esto es un comentario multilinea en CSS
+CSS hojas de estilo en cascada
+
+Su sintaxis es de la siguiente forma:
+Selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+}
+
+selectores:
+    - etiqueta: el selector menos específico. Ej: quiero que todos mis parrafos tengan de fondo el color gris
+    - Class: es más especifico que el de etiqueta y me ayuda a clasificar distintos elementos de HTML y 
+    aplicarles el mismo estilo. Llamo al selector de clase a través del punto. 
+    - id: selector con mas especificidad porque puedo poner un mismo id a un único elemento. No puedo repetir los nombres de los ids.
+    Los id se les llama a trvés del #
+
+Si tengo la misma especificidad, la cascada mata la especificidad.
+El important cancela la especificidad y la cascada. Cómo máximo, deberíamos usar 5 important por proyecto. Pero en general no es la 
+mejor práctica. 
+
+herencia: los hijos y nietos heredarán propiedades y valores del padre, siempre y cuando ellos no tengan esa propiedad.
+
+/*p{
+    background-color: gray;
+    /*los px son tamaños absolutos*/
+    /*font-size: 30px; /*el valor por defecto de lafuente de un navegador es la que pone el user, son 16px*/
+    /*font-size: 1rem /*REM: es una unidad de medida relativa 1rem=16px, mientras tanto el user no cambie la configuración de la fuente en el navegador*/;
+    /*font-weight: 700;/*bold:700   regunlar:400    semibold 600*/
+    /*font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,400;0,500;0,900;1,100;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* el que tiene el tamaño de la caja es el contenido*/
+}
+
+body{
+    margin:20px;
+    font-family: 'Roboto';
+   
+}
+
+/*estilo en el header del index*/
+
+.header {
+   
+    background-image: url("../Assets/img/casa/casa_fondo.jpg");
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+    /*anidado el primer hijo*/
+    .contenedorNav{
+        background-color: #ddffcd;
+        .logo{
+            margin-top:10px;
+            margin-left:10px;
+            width: 200px;
+        }
+        .listaNav{
+            list-style: none;
+             text-align: center;
+            .listaItem{
+               display:inline-block;
+                
+                .linkNav{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.6rem;
+                    padding-right: 80px ;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.contenidoPrincipalIndex{
+    color: white;
+    margin: 245px auto;
+    width: 600px;
+    text-align: center;
+}
+
+
+
+
+

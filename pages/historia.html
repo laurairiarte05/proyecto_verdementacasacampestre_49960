@@ -1,0 +1,103 @@
+<!DOCTYPE html><!--esta etiqueta es la que indica que indica que mi pagina web esta realizada en HTML5-->
+<!--para grabar ctrl + s -->
+<html lang="es"><!--las etiquetas que tienen cierre, son etiquetas cerradas-->
+    <!--en el head van las configuraciones para el navegador-->
+    <head>
+        <!--las metas son etiquetas de configuracion-->
+        <!--Los azules son atributos-->
+        <meta charset="UTF-8"> <!--indica que el contenido está en idioma español-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--indica que un pixel es lo mismo en una pestaña de escritorio y en una de celular. Un pixel es lo mismo en cualquier tamaño de pantalla-->
+        <!--etiqueta del titulo de la pagina, aparece en la pestaña (es la unica etiqueta que ve el usuario)-->
+        <title>Nosotros</title>
+        <link rel="shortcut icon" href="../favicon.ico" type="imagen/x-icon">
+        <link rel="stylesheet" href="../CSS/estilos.css">
+    </head>
+    <!--En el body, va lo que ve el usuario en el viewport-->
+    <body>
+        <header><!--cabecera de mi sitio web-->
+            <!--el logo siempre va dentro de un ancla y siempre ese ancla debe 
+            redirigir a la página de inicio-->
+            <!--un ancla es un link que sirve para movernos entre páginas del sitio web -->
+            <a href="../index.html">
+                <img src="../Assets/img/logo.JPG" alt="Logo">
+            </a>
+            <nav><!--navegación: enlaces-->
+                <!--ul (listas desordenadas): sirven para agrupar contenidos que tienen sentido que estén agrupados. 
+                ejemplo: una lista de compras-->
+                <ul>
+                    <!--li*5 + tab = poner de una vez los 5 <li>-->
+                    <!--al mantener la tecla alt presionada, puedo selccionar varias líneas y editar en todas al tiempo-->
+                    <!--es obligatorio tener li (lista item) dentro de las listas desordenadas--> 
+                    <!--enlaces absolutos: url completa ej: google y enlaces relativos: cambia la dirección dependiendo de donde
+                    esté parado-->
+                    <li><a class="linkNav" href="../index.html">Inicio</a></li><!-- ./ o ../ para seleccionar la página a la que voy a ir-->
+                    <li><a class="linkNav" href="./historia.html">Historia</a></li>
+                    <li><a class="linkNav" href="./servicios.html">Servicios</a></li>
+                    <li><a class="linkNav" href="./conocenos.html">Conócenos</a></li>
+                    <li><a class="linkNav" href="./contacto.html">Contacto</a></li> 
+                </ul>         
+            </nav>       
+        </header>
+        <main><!--contenido principal de mi sitio web-->
+            <section> 
+                <div >
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7H8t6wge4AQ?si=d2VeeISwufZFhASa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div >
+                    <h1>¿QUIENES SOMOS?</h1>
+                    <P>verde Menta surge de la necesidad de tener un negocio familiar. Mi esposa Anyela y yo (José Piar) nos hemos dedicado al emprendimiento durante toda nuestra vida. Sin embargo, este proyecto llegó a nosotros sin buscarlo. Construimos la casa con el objetivo de volverla nuestro hogar. Pero con el paso del tiempo, las personas que la veían empezaron a preguntar si rentabamos los fines de semana. Así fue que poco a poco empezamos a recibir huéspedes, es por eso que somos nosotros mismos quienes atendemos durante la estancia, porque más que un negocio, Verde Menta también es nuestro hogar.</P>
+                </div> 
+            </section>
+            <section> 
+                <div >
+                    <h1>NUESTRO PROPÓSITO</h1>
+                    <P>No conocíamos el potencial que tiene el municipio de Rivera como lugar turístico. Es conocido como el municipio verde de Colombia. dados los innumerables lugares naturales que lo rodean. Además, cuenta con deliciosos restaurantes, el clima es ideal alrededor de 26 grados centigrados y su ubicación permite llegar rápidamente a otros municipios del departamento. Dado esto, nuestro prósito es impulsar el turismo en Rivera, brindarle a nuestros huéspedes toda la información y la mejor experiencia, para que se enamoren, nos recomienden y regresen. Queremos ser el mejor hotel campestre de la zona y así mismo, lograr que Rivera se convierta en un destino obligatorio para toda la población no solo colombiana sino también extranjera.</P>
+                </div> 
+                <div >
+                    <img src="../Assets/img/huespedes/huespedes.png" alt="casa">
+                </div>
+            </section>   
+            <section>
+                <div>
+                    <div>
+                         <img src="../Assets/img/rivera/rivera.jpg" alt="rivera">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/rivera/rivera2.jpg" alt="rivera">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/rivera/rivera3.jpg" alt="rivera">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/rivera/rivera4.jpg" alt="rivera">
+                    </div>
+                    <div>
+                         <img src="../Assets/img/rivera/rivera5.jpg" alt="rivera">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="contenedorRedesSocialesFooter">
+                <!--taget _blank: se usa para los enlaces externos, para que no se cierre mi sitio web -->
+                <a class="redesSocialesFooter" target="_blank" href="https://wa.link/f85ij1"><img src="../Assets/img/logo_whatsapp.png" alt=whatsapp"></a>
+                <a class="redesSocialesFooter" target="_blank" href="https://instagram.com/verdementa.casacampestre?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><img src="../Assets/img/logo_instagram.png" alt="instagram"></a>
+                <a class="redesSocialesFooter" target="_blank" href="https://www.facebook.com/verdementariverahuila?mibextid=LQQJ4d"><img src="../Assets/img/logo_facebook.png" alt="facebook"></a>
+            </div>
+            <div class="contenedorMapaVerdeMenta">
+                <div class="contenedorMapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15940.652933906103!2d-75.236321!3d2.7680071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b6c1811102259%3A0x60a798c7f101b57a!2sVerde%20Menta%20Casa%20Campestre%2C%20Rivera%20Huila!5e0!3m2!1ses-419!2sco!4v1696721455543!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="informacionFooter">
+                    <p class="parrafoInfoFooter">Vereda Termopilas Rivera Huila</p>
+                    <p class="parrafoInfoFooter">Cel: 3156746464</p>
+                    <p class="parrafoInfoFooter">verdementacasacampestre@gmail.com</p>
+                    <p class="parrafoInfoFooter">Horario de atención: 8am a 8pm</p>
+                    <p class="masInformacionFooter"> <a href="./pages/contacto.html">Más información</a></p>
+                </div>
+            </div>           
+        </footer>
+        
+    </body>
+</html>
