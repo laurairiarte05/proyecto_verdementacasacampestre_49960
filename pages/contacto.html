@@ -1,126 +1,158 @@
-<!DOCTYPE html><!--esta etiqueta es la que indica que indica que mi pagina web esta realizada en HTML5-->
-<!--para grabar ctrl + s -->
-<html lang="es"><!--las etiquetas que tienen cierre, son etiquetas cerradas-->
-    <!--en el head van las configuraciones para el navegador-->
+<!DOCTYPE html>
+<html lang="es">
     <head>
-        <!--las metas son etiquetas de configuracion-->
-        <!--Los azules son atributos-->
-        <meta charset="UTF-8"> <!--indica que el contenido está en idioma español-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--indica que un pixel es lo mismo en una pestaña de escritorio y en una de celular. Un pixel es lo mismo en cualquier tamaño de pantalla-->
-        <!--etiqueta del titulo de la pagina, aparece en la pestaña (es la unica etiqueta que ve el usuario)-->
-        <title>Contacto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verde Menta Casa Campestre</title>
         <link rel="shortcut icon" href="../favicon.ico" type="imagen/x-icon">
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
         <link rel="stylesheet" href="../CSS/estilos.css">
     </head>
-    <!--En el body, va lo que ve el usuario en el viewport-->
     <body>
-        <header><!--cabecera de mi sitio web-->
-            <!--el logo siempre va dentro de un ancla y siempre ese ancla debe 
-            redirigir a la página de inicio-->
-            <!--un ancla es un link que sirve para movernos entre páginas del sitio web -->
-            <a href="../index.html">
-                <img src="../Assets/img/logo.JPG" alt="Logo">
-            </a>
-            <nav><!--navegación: enlaces-->
-                <!--ul (listas desordenadas): sirven para agrupar contenidos que tienen sentido que estén agrupados. 
-                ejemplo: una lista de compras-->
-                <ul>
-                    <!--li*5 + tab = poner de una vez los 5 <li>-->
-                    <!--al mantener la tecla alt presionada, puedo selccionar varias líneas y editar en todas al tiempo-->
-                    <!--es obligatorio tener li (lista item) dentro de las listas desordenadas--> 
-                    <!--enlaces absolutos: url completa ej: google y enlaces relativos: cambia la dirección dependiendo de donde
-                    esté parado-->
-                    <li><a class="linkNav" href="../index.html">Inicio</a></li><!-- ./ o ../ para seleccionar la página a la que voy a ir-->
-                    <li><a class="linkNav" href="./historia.html">Historia</a></li>
-                    <li><a class="linkNav" href="./servicios.html">Servicios</a></li>
-                    <li><a class="linkNav" href="./conocenos.html">Conócenos</a></li>
-                    <li><a class="linkNav" href="./contacto.html">Contacto</a></li> 
-                </ul>         
+        <header class="header">
+            <nav class="navbar navbar-expand-lg navbar-light fs-5 fw-bold">
+                <div class="container">
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../Assets/img/logo.png" alt="Logo" width="200">
+                  </a>
+    
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                      <li class="nav-item text-center">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="./historia.html">Historia</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="./conocenos.html">Conócenos</a>
+                      </li>
+                      <li class="nav-item text-center">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                      </li>                          
+                    </ul>
+                  </div>
+                </div>
             </nav>       
         </header>
-        <main><!--contenido principal de mi sitio web-->
-        <!--titulo principal de pa pagina, tiene que haber un h1 por pagina-->
-        <section class="contenidoPrincipalContacto">
-            <h1>HAZ TU RESERVA</h1>
-            <h3>Deja tus datos y muy pronto estaremos comunicándonos contigo</h3>            
-        </section>
-                <form action="">
-                    <div>
-                        <label class="labelForm" for="nombre">Nombre Completo*</label><!--etiqueta del campo--><!--el atributo for sirve para relacionar el label con el input-->
-                    <!--input: sirve para que el usuario pueda editar. Este campo es tipo texto, id: único e irrpetible, required: si o si debe llenarlo, 
-                    name: sugerir nombre, placeholder: sugerencia para el usuario-->
-                        <input type="text" name="nombre" id="nombre" required>
+        <main>
+            <div class="carousel-inner mb-5">
+                <div class="carousel-item active carouselHeader">
+                <img src="../Assets/img/casa/casa_piscina_fondo.jpg" class="d-block w-100" alt="fondo1">
+                    <div class="row carousel-caption">
+                        <h5 class="col-12">Haz tu reserva</h5>
+                        <p class="col-12">Deja tus datos y muy pronto estaremos comunicándonos contigo</p>
                     </div>
-                    <div>
-                        <label class="labelForm" for="celular">Celular*</label><!--etiqueta del campo-->
-                        <input type="number" name="celular" id="celular" required>
+                </div>
+            </div>            
+            <section class="container">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                    <label for="inputNombre" class="form-label">Nombre Completo*</label>
+                    <input type="text" class="form-control" id="inputNombre" required>
                     </div>
-                    <div>
-                        <label class="labelForm" for="email">Email*</label><!--etiqueta del campo-->
-                        <input type="email" name="email" id="email" placeholder="ejemplo@servidor.com" required><!--en los campos en los que debo indicarle al usuario
-                    </div>una buena práctica, me conviene tener el label y el placeholder-->
-                    <div>
-                        <label class="labelForm" for="desde">Desde*</label><!--etiqueta del campo-->
-                        <input type="date" name="desde" id="desde" required>
+                    <div class="col-md-6">
+                    <label for="inputCiudad" class="form-label">Ciudad*</label>
+                    <input type="text" class="form-control" id="inputCiudad" required>
                     </div>
-                    <div>
-                        <label class="labelForm" for="hasta">Hasta*</label><!--etiqueta del campo-->
-                        <input type="date" name="hasta" id="hasta" required>
+                    <div class="col-md-6">
+                        <label for="celular" class="form-label">Celular*</label>
+                        <input type="number" class="form-control" id="celular" required>
                     </div>
-                    <div>
-                        <label class="labelForm" for="adultos">No. de adultos*</label><!--etiqueta del campo-->
-                        <input type="number" name="adultos" id="adultos" required>
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Correo*</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
                     </div>
-                    <div>
-                        <label class="labelForm" for="niños">No. de niños*</label><!--etiqueta del campo-->
-                        <input type="number" name="niños" id="niños" required>
+                    <div class="col-md-6">
+                        <label class="form-label" for="desde">Desde*</label>
+                        <input type="date" class="form-control" id="desde" required>
                     </div>
-                    <div>
-                        <input class="inputBotonesFormulario" type="submit" value="Enviar Formulario">
-                        <input class="inputBotonesFormulario" type="reset" value="Limpiar Formulario">
+                    <div class="col-md-6">
+                        <label class="form-label" for="hasta">Hasta*</label><!--etiqueta del campo-->
+                        <input type="date" class="form-control" id="hasta" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="adultos" class="form-label">No. de adultos*</label>
+                        <input type="number" class="form-control" id="adultos" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="niños" class="form-label">No. de niños*</label>
+                        <input type="number" class="form-control" id="niños" required>
+                    </div>
+                    <div class="col-md-12 d-flex align-items-center justify-content-center p-3">
+                        <input class="btn btn-primary m-3 btnFormulario" type="submit" value="Enviar Formulario">
+                        <input class="btn btn-primary m-3 btnFormulario" type="reset" value="Limpiar Formulario">
                     </div>
                 </form>
             </section>
-            <section>
-                <table>
-                    <caption>BENEFICIOS</caption>
-                    <tbody>
-                        <tr>
-                            <td>Pet Friendly</td>
-                            <td>Gimnasio</td>
-                            <td>Parque infantil</td>
-                            <td>Piscina</td>
-                        </tr>
-                        <tr>
-                            <td>Salón social</td>
-                            <td>Fogata</td>
-                            <td>WiFi</td>
-                            <td>Parqueadero</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <section class="container p-3">
+                <div class="text-center beneficios">
+                    <h3>Beneficios</h3>
+                </div>
+                <div class=" row itemsBeneficios m-5">
+                    <div class="col-6 col-md-4 d-flex align-items-center justify-content-center p-3">
+                        <img src="../Assets/img/beneficios/huella.png" class="logosImagenes" alt="petFriendly">
+                        <h5>Pet Friendly</h5>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex align-items-center justify-content-center p-3">
+                        <img src="../Assets/img/beneficios/parque.png" class="logosImagenes" alt="parque">
+                        <h5>Parque Infantil</h5>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex align-items-center justify-content-center p-3">
+                        <img src="../Assets/img/beneficios/kiosko.png" class="logosImagenes" alt="salonSocial">
+                        <h5>Salón Social</h5>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex align-items-center justify-content-center p-3">
+                        <img src="../Assets/img/beneficios/wifi.png" class="logosImagenes" alt="wifi">
+                        <h5>Wi-Fi</h5>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex align-items-center justify-content-center p-3">
+                        <img src="../Assets/img/beneficios/gimnasio.png" class="logosImagenes" alt="gimnasio">
+                        <h5>Gimnasio</h5>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex align-items-center justify-content-center p-3">
+                        <img src="../Assets/img/beneficios/nadador.png" class="logosImagenes" alt="piscina">
+                        <h5>Piscina</h5>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex align-items-center justify-content-center p-3">
+                        <img src="../Assets/img/beneficios/fuego.png" class="logosImagenes" alt="fogata">
+                        <h5>Fogata</h5>
+                    </div>
+                    <div class="col-6 col-md-4 d-flex align-items-center justify-content-center p-3">
+                        <img src="../Assets/img/beneficios/carro.png" class="logosImagenes" alt="parqueadero">
+                        <h5>Parqueadero</h5>
+                    </div>
+                </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="contenedorRedesSocialesFooter">
+        <footer class="container-fluid pt-3 bgFooter">
+            <div class="d-flex justify-content-center pb-3 divRedesFooter">
                 <!--taget _blank: se usa para los enlaces externos, para que no se cierre mi sitio web -->
-                <a class="redesSocialesFooter" target="_blank" href="https://wa.link/f85ij1"><img src="../Assets/img/logo_whatsapp.png" alt=whatsapp"></a>
-                <a class="redesSocialesFooter" target="_blank" href="https://instagram.com/verdementa.casacampestre?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><img src="../Assets/img/logo_instagram.png" alt="instagram"></a>
-                <a class="redesSocialesFooter" target="_blank" href="https://www.facebook.com/verdementariverahuila?mibextid=LQQJ4d"><img src="../Assets/img/logo_facebook.png" alt="facebook"></a>
+                <a class="redesSocialesFooter" target="_blank" href="https://wa.link/f85ij1"><img src="../Assets/img/whatsapp.png" class="imgRedesSocialesFooter" alt=whatsapp"></a>
+                <a class="redesSocialesFooter" target="_blank" href="https://instagram.com/verdementa.casacampestre?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr"><img src="../Assets/img/instagram.png" class="imgRedesSocialesFooter" alt="instagram"></a>
+                <a class="redesSocialesFooter" target="_blank" href="https://www.facebook.com/verdementariverahuila?mibextid=LQQJ4d"><img src="../Assets/img/facebook.png" class="imgRedesSocialesFooter" alt="facebook"></a>
             </div>
-            <div class="contenedorMapaVerdeMenta">
-                <div class="contenedorMapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15940.652933906103!2d-75.236321!3d2.7680071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b6c1811102259%3A0x60a798c7f101b57a!2sVerde%20Menta%20Casa%20Campestre%2C%20Rivera%20Huila!5e0!3m2!1ses-419!2sco!4v1696721455543!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="d-flex align-items-center justify-content-center contenedorFooter">
+                <div class="col-12 col-md-6 p-3 d-flex justify-content-end">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15940.652933906103!2d-75.236321!3d2.7680071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b6c1811102259%3A0x60a798c7f101b57a!2sVerde%20Menta%20Casa%20Campestre%2C%20Rivera%20Huila!5e0!3m2!1ses-419!2sco!4v1696721455543!5m2!1ses-419!2sco" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="informacionFooter">
-                    <p class="parrafoInfoFooter">Vereda Termopilas Rivera Huila</p>
-                    <p class="parrafoInfoFooter">Cel: 3156746464</p>
-                    <p class="parrafoInfoFooter">verdementacasacampestre@gmail.com</p>
-                    <p class="parrafoInfoFooter">Horario de atención: 8am a 8pm</p>
-                    <p class="masInformacionFooter"> <a href="./pages/contacto.html">Más información</a></p>
+                <div class="col-12 col-md-6 d-flex flex-column text-white informacionFooter">
+                    <p class="w-50 parrafoInfoFooter">Vereda Termopilas Rivera Huila</p>
+                    <p class="w-50 parrafoInfoFooter"><span class="fw-bold">Cel:</span> 3156746464</p>
+                    <p class="w-50 parrafoInfoFooter"><span class="fw-bold">Mail: </span>verdementacasacampestre@gmail.com</p>
+                    <p class="w-50 parrafoInfoFooter"><span class="fw-bold">Horario de atención:</span> Lunes a viernes de 8am a 8pm</p>
+                    <p class="w-50 btnMasInformacionFooter"> <a class="text-decoration-none text-white fw-bold" href="./contacto.html">Más información</a></p>
                 </div>
-            </div>           
+            </div>
+           
         </footer>
-        
+        <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
