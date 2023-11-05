@@ -184,6 +184,24 @@
     background-color: rgb(12, 145, 83);
     border-color: rgb(12, 145, 83);
 }
+@media screen and (max-width: 768px){
+    .carousel-caption{ 
+        padding-top: 2rem;
+        font-size: 1rem;
+        text-align: center;
+        
+    }
+    .carousel-caption h5{
+        font-size: 2rem;
+    }    
+    .carouselOpiniones1{
+        height: 70vh;
+        .parrafoOpinionesIndex{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }    
+}
 
 /*CSS CONTACTO*/
 .btnFormulario{
@@ -211,7 +229,10 @@
     width: 300px;
     height: 300px;
     padding: 4px;
+    margin: 4px;
     object-fit: cover;
+    border: 1px solid white;
+    border-radius: 50px;
 }
 .bgHabitaciones{
     background-color: #783d19;
@@ -241,6 +262,15 @@
     border-color: rgb(12, 145, 83);
     color: white;
 }
+@media screen and (max-width: 768px){
+    .imgServicios{
+        flex-direction: column;
+
+    }
+    
+}
+
+
 /*CONOCENOS*/
 .conocenosHabitaciones h2{
     font-family: 'Rochester', cursive;
@@ -256,8 +286,8 @@
                          "prin2 prin3 prin6 prin6"
                          "prin2 prin3 prin6 prin6"
                          "prin prin per3 per8"
-                         "per5 per5 per3 per8";
-    gap: 10px;
+                         "prin prin per3 per8";
+    gap: 7px;
 }
 .galeriaImagenes_5per2{
     grid-area: per2;
@@ -270,26 +300,27 @@
 }
 .galeriaImagenes_prin{
     grid-area: prin;
-}.galeriaImagenes_prin2{
-    grid-area: prin2;
 }
 .galeriaImagenes_prin3{
     grid-area: prin3;
-}.galeriaImagenes_prin6{
+}
+.galeriaImagenes_prin6{
     grid-area: prin6;
 }
 .galeriaImagenes_7per3{
     grid-area: per3;
-}.galeriaImagenes_7per5{
-    grid-area: per5;
 }
 .galeriaImagenes_4per{
     grid-area: per8;
+}
+.galeriaImagenes_prin2{
+    grid-area: prin2;
 }
 .galeria_img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 .galeria2{
     display: grid;
@@ -302,7 +333,7 @@
                          "png6 png8 png4 png9"
                          "png11 png15 fon1 fon1"
                          "png11 png15 fon1 fon1";
-    gap: 10px;
+    gap: 7px;
 }
 .galeriaCasa_1{
     grid-area: fon1;
@@ -338,11 +369,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 @media screen and (max-width: 768px){
     .galeria{
         grid-template-columns: 1fr;
-        grid-auto-rows: 200px;
+        grid-auto-rows: 300px;
         grid-template-areas: "per2"
                              "per4"
                              "per"
@@ -356,7 +388,7 @@
     }
     .galeria2{
         grid-template-columns: 1fr;
-        grid-auto-rows: 200px;
+        grid-auto-rows: 300px;
         grid-template-areas: "fon1"
                              "png2"
                              "png4"
@@ -368,4 +400,55 @@
                              "png6"
                              "png11";
     }
+}
+
+/*HISTORIA*/
+.SectionVideoHistoria{
+    height: 350px;
+}
+.historiaH1{
+    font-family: 'Rochester', cursive;
+    font-size: 3.5rem;
+}
+.bgNuestroProposito{
+    background-color: #3e5521;
+}
+.imgSectionHistoria{
+    object-fit: cover;
+    border: 1px solid white;
+    padding: 15px;
+    height: 280px;
+    width: 95%;
+    margin-top: 0;
+}
+.parrafoProposito{
+    padding-left: 40px;
+}
+.imgRivera{    
+    width: 300px;
+    height: 300px;
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+@media screen and (max-width: 768px){
+    .divSectionVideoHistoria{
+        flex-direction: column-reverse;
+
+    }
+    .parrafoProposito{
+        padding-left: 20px;
+    }
+    .divImgRivera{
+        flex-direction: column;
+    }
+    .contenedorFooter{
+        flex-direction: column-reverse;
+        .informacionFooter{
+            line-height: 15px;
+        }
+    }
+    
 }
