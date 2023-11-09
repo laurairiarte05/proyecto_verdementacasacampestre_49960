@@ -1,454 +1,493 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rochester&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Crimson Pro", serif;
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Crimson Pro', serif;
+.fw-bold {
+  font-weight: 600;
 }
-.fw-bold{
-    font-weight: 600;
-}
-.navbar-light .navbar-nav .nav-link{
-    color: #156e19;
-}
-.navbar-light .navbar-nav .nav-link:hover{
-    color: #ffffff;
-    background-color: rgb(141, 106, 18);
-    border-radius: 5px;
 
+.navbar-light .navbar-nav .nav-link {
+  color: #156e19;
 }
-.carouselHeader{
-    height:50vh;
-    width: 100%;
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffffff;
+  background-color: rgb(141, 106, 18);
+  border-radius: 5px;
 }
-.carouselHeader img{
-    height: 50vh;
-    width: 100%;
-    object-fit: cover;
+
+.carouselHeader {
+  height: 50vh;
+  width: 100%;
 }
-.carousel-caption{
-    background-color: rgba(0, 0, 0, 0.281);
-    right: 0%;
-    left: 0%;
-    top: 0%;
-    bottom: 0%;    
-    padding-top: 11rem;
-    font-size: 1.5rem;
+
+.carouselHeader img {
+  height: 50vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.281);
+  right: 0%;
+  left: 0%;
+  top: 0%;
+  bottom: 0%;
+  padding-top: 11rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.carousel-caption h5 {
+  font-size: 4rem;
+  font-family: "Rochester", cursive;
+  margin-bottom: 0;
+}
+
+.fondoCards {
+  margin-top: 2.5rem;
+  height: 400px;
+}
+
+.card-img-top {
+  margin-top: 2.5rem;
+  height: 30%;
+  width: 130px;
+  -o-object-fit: content;
+     object-fit: content;
+  border-radius: 7px;
+}
+
+.card-body {
+  padding-top: 0.4rem;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Rochester", cursive;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 6px;
+  width: 285px;
+  height: 100px;
+}
+
+.btnCardsIdex {
+  color: white;
+  font-size: 0.8rem;
+  background-color: rgb(141, 106, 18);
+  border: 1px solid rgb(141, 106, 18);
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnCardsIdex:hover {
+  background-color: rgb(12, 145, 83);
+  border-color: rgb(12, 145, 83);
+}
+
+.bgOscuroDiv {
+  margin-top: 1rem;
+  background-color: #3e5521;
+}
+
+.bgOscuro {
+  height: 300px;
+}
+
+.textoIntroduccionIndex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.btnIntroduccionIndex {
+  color: white;
+  font-size: 1rem;
+  background-color: rgb(141, 106, 18);
+  border-color: rgb(141, 106, 18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnIntroduccionIndex:hover {
+  background-color: rgb(12, 145, 83);
+  border-color: rgb(12, 145, 83);
+}
+
+.imgIntroduccionIndex {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 75%;
+  width: 75%;
+  margin-top: 0;
+  border: 1px solid rgba(255, 255, 255, 0.582);
+}
+
+.cuadradoIndex {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.664);
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 180px;
+}
+
+.cuadradoIndex2 {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.664);
+  width: 200px;
+  height: 70px;
+  position: absolute;
+  right: 3rem;
+  top: 20px;
+}
+
+.carouselOpiniones1 {
+  height: 55vh;
+  width: 100%;
+  align-items: center;
+}
+
+.carouselOpinionesIndex {
+  background-color: white;
+  padding: 3rem;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.parrafoOpinionesIndex {
+  width: 80%;
+}
+
+.bgFooter {
+  background-color: #2f411a;
+  width: 100%;
+}
+
+.divRedesFooter {
+  gap: 20px;
+}
+
+.imgRedesSocialesFooter {
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.contenedorFooter {
+  width: 100%;
+}
+
+.btnMasInformacionFooter {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  background-color: rgb(141, 106, 18);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.btnMasInformacionFooter:hover {
+  background-color: rgb(12, 145, 83);
+  border-color: rgb(12, 145, 83);
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    padding-top: 2rem;
+    font-size: 1rem;
     text-align: center;
-    
-}
-.carousel-caption h5{
-    font-size: 4rem;
-    font-family: 'Rochester', cursive;
-    margin-bottom: 0;
-}
-.fondoCards{
-    margin-top: 2.5rem;
-    height: 400px;
-}
-.card-img-top{
-    margin-top: 2.5rem;
-    height: 30%;
-    width: 130px;
-    object-fit: content;
-    border-radius: 7px;
-    
-}
-.card-body{
-    padding-top: 0.4rem;
-}
-.card-title{
-    text-align: center;
+  }
+  .carousel-caption h5 {
     font-size: 2rem;
-    font-family: 'Rochester', cursive;
+  }
+  .carouselOpiniones1 {
+    height: 70vh;
+  }
+  .carouselOpiniones1 .parrafoOpinionesIndex {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
-.card-text{
-    font-size: 14px;
-    margin-bottom: 6px;
-    width: 285px;
-    height: 100px;
-}
-.btnCardsIdex{
-    color: white;
-    font-size: 0.8rem;
-    background-color: rgb(141, 106, 18);
-    border: 1px solid rgb(141, 106, 18);
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btnCardsIdex:hover{
-    background-color: rgb(12, 145, 83);
-    border-color: rgb(12, 145, 83)
-}
-.bgOscuroDiv{
-    margin-top: 1rem;
-    background-color: #3e5521;
-}
-.bgOscuro{
-    height: 300px;
-}
-
-.textoIntroduccionIndex{
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px;    
-    padding-left: 4rem;
-    padding-right: 4rem;
-}
-.btnIntroduccionIndex{
-    color: white;
-    font-size: 1rem;
-    background-color: rgb(141, 106, 18);
-    border-color: rgb(141, 106, 18);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btnIntroduccionIndex:hover{
-    background-color: rgb(12, 145, 83);
-    border-color: rgb(12, 145, 83);
-}
-.imgIntroduccionIndex{
-    object-fit: cover;
-    height: 75%;
-    width: 75%;
-    margin-top: 0;
-    border: 1px solid rgba(255, 255, 255, 0.582);
-}
-.cuadradoIndex{
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.664);
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    left: 0;
-    top: 180px;
-}
-.cuadradoIndex2{
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.664);
-    width: 200px;
-    height: 70px;
-    position: absolute;
-    right: 3rem;
-    top: 20px;
-}
-.carouselOpiniones1{
-    height:55vh;
-    width: 100%;
-    align-items: center;
-}
-.carouselOpinionesIndex{
-    background-color: white;
-    padding: 3rem;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 1rem;
-}
-.parrafoOpinionesIndex{
-    width: 80%;
-}
-.bgFooter{
-    background-color: #2f411a;
-    width: 100%;
-}
-.divRedesFooter{
-    gap: 20px;
-}
-.imgRedesSocialesFooter{
-    width: 50px;
-    object-fit: cover;
-}
-.contenedorFooter{
-    width: 100%;
-}
-.btnMasInformacionFooter{
-    display: flex;
-    width: 200px;
-    height: 40px;
-    background-color: rgb(141, 106, 18);
-    border: 1px solid white;
-    border-radius: 10px;
-    color: white;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-.btnMasInformacionFooter:hover{
-    background-color: rgb(12, 145, 83);
-    border-color: rgb(12, 145, 83);
-}
-@media screen and (max-width: 768px){
-    .carousel-caption{ 
-        padding-top: 2rem;
-        font-size: 1rem;
-        text-align: center;
-        
-    }
-    .carousel-caption h5{
-        font-size: 2rem;
-    }    
-    .carouselOpiniones1{
-        height: 70vh;
-        .parrafoOpinionesIndex{
-            padding-top: 25px;
-            padding-bottom: 25px;
-        }
-    }    
-}
-
 /*CSS CONTACTO*/
-.btnFormulario{
-    background-color: rgb(141, 106, 18);
-    border-color: rgb(141, 106, 18);
+.btnFormulario {
+  background-color: rgb(141, 106, 18);
+  border-color: rgb(141, 106, 18);
 }
-.btnFormulario:hover{
-    background-color: rgb(12, 145, 83);
-    border-color: rgb(12, 145, 83);
+
+.btnFormulario:hover {
+  background-color: rgb(12, 145, 83);
+  border-color: rgb(12, 145, 83);
 }
-.beneficios h3{
-    font-size: 3rem;    
-    font-family: 'Rochester', cursive;
+
+.beneficios h3 {
+  font-size: 3rem;
+  font-family: "Rochester", cursive;
 }
-.logosImagenes{
-    margin-right: 8px;
+
+.logosImagenes {
+  margin-right: 8px;
 }
 
 /*CSS SERVICIOS*/
-.tituloServicios{
-    font-family: 'Rochester', cursive;
-    font-size: 4rem;
-}
-.imgHabitacionesServicios{    
-    width: 300px;
-    height: 300px;
-    padding: 4px;
-    margin: 4px;
-    object-fit: cover;
-    border: 1px solid white;
-    border-radius: 50px;
-}
-.bgHabitaciones{
-    background-color: #783d19;
-    color: white;
-}
-.bgEventos{
-    background-color: white;
-}
-.bgPasadia{
-    background-color: #783d19;
-    color: white;
-}
-.btnServicios{
-    color: white;
-    font-size: 1rem;
-    background-color: #3e5521;
-    border: 1px solid #3e5521;
-    width: 200px;
-    height: 40px;
-    border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.btnServicios:hover{
-    background-color: rgb(12, 145, 83);
-    border-color: rgb(12, 145, 83);
-    color: white;
-}
-@media screen and (max-width: 768px){
-    .imgServicios{
-        flex-direction: column;
-
-    }
-    
+.tituloServicios {
+  font-family: "Rochester", cursive;
+  font-size: 4rem;
 }
 
+.imgHabitacionesServicios {
+  width: 300px;
+  height: 300px;
+  padding: 4px;
+  margin: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid white;
+  border-radius: 50px;
+}
 
+.bgHabitaciones {
+  background-color: #783d19;
+  color: white;
+}
+
+.bgEventos {
+  background-color: white;
+}
+
+.bgPasadia {
+  background-color: #783d19;
+  color: white;
+}
+
+.btnServicios {
+  color: white;
+  font-size: 1rem;
+  background-color: #3e5521;
+  border: 1px solid #3e5521;
+  width: 200px;
+  height: 40px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnServicios:hover {
+  background-color: rgb(12, 145, 83);
+  border-color: rgb(12, 145, 83);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .imgServicios {
+    flex-direction: column;
+  }
+}
 /*CONOCENOS*/
-.conocenosHabitaciones h2{
-    font-family: 'Rochester', cursive;
-    font-size: 3.8rem;
-}
-.galeria{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-columns: repeat (auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 150px;
-    grid-template-areas: "per2 per2 per4 per"
-                         "prin2 prin3 per4 per"
-                         "prin2 prin3 prin6 prin6"
-                         "prin2 prin3 prin6 prin6"
-                         "prin prin per3 per8"
-                         "prin prin per3 per8";
-    gap: 7px;
-}
-.galeriaImagenes_5per2{
-    grid-area: per2;
-}
-.galeriaImagenes_5per4{
-    grid-area: per4;
-}
-.galeriaImagenes_5per{
-    grid-area: per;
-}
-.galeriaImagenes_prin{
-    grid-area: prin;
-}
-.galeriaImagenes_prin3{
-    grid-area: prin3;
-}
-.galeriaImagenes_prin6{
-    grid-area: prin6;
-}
-.galeriaImagenes_7per3{
-    grid-area: per3;
-}
-.galeriaImagenes_4per{
-    grid-area: per8;
-}
-.galeriaImagenes_prin2{
-    grid-area: prin2;
-}
-.galeria_img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.galeria2{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);    
-    grid-template-columns: repeat (auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 150px; 
-    grid-template-areas: "png2 piscina piscina parque"
-                         "png2 piscina piscina parque"
-                         "png6 png8 png4 png9"
-                         "png6 png8 png4 png9"
-                         "png11 png15 fon1 fon1"
-                         "png11 png15 fon1 fon1";
-    gap: 7px;
-}
-.galeriaCasa_1{
-    grid-area: fon1;
-}
-.galeriaCasa_png2{
-    grid-area: png2;
-}
-.galeriaCasa_png4{
-    grid-area: png4;
-}
-.galeriaCasa_png8{
-    grid-area: png8;
-}
-.galeriaCasa_png9{
-    grid-area: png9;
-}
-.galeriaCasa_png15{
-    grid-area: png15;
-}
-.galeriaCasa_parque{
-    grid-area: parque;
-}
-.galeriaCasa_piscina{
-    grid-area: piscina;
-}
-.galeriaCasa_png6{
-    grid-area: png6;
-}
-.galeriaCasa_png11{
-    grid-area: png11;
-}
-.galeria_img2{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-}
-@media screen and (max-width: 768px){
-    .galeria{
-        grid-template-columns: 1fr;
-        grid-auto-rows: 300px;
-        grid-template-areas: "per2"
-                             "per4"
-                             "per"
-                             "prin"
-                             "prin2"
-                             "prin3"
-                             "prin6"
-                             "per3"
-                             "per5"
-                             "per8";
-    }
-    .galeria2{
-        grid-template-columns: 1fr;
-        grid-auto-rows: 300px;
-        grid-template-areas: "fon1"
-                             "png2"
-                             "png4"
-                             "png8"
-                             "png9"
-                             "png15"
-                             "parque"
-                             "piscina"
-                             "png6"
-                             "png11";
-    }
+.conocenosHabitaciones h2 {
+  font-family: "Rochester", cursive;
+  font-size: 3.8rem;
 }
 
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat auto-fit, minmax(300px, 1fr);
+  grid-auto-rows: 150px;
+  grid-template-areas: "per2 per2 per4 per" "prin2 prin3 per4 per" "prin2 prin3 prin6 prin6" "prin2 prin3 prin6 prin6" "prin prin per3 per8" "prin prin per3 per8";
+  gap: 7px;
+}
+
+.galeriaImagenes_5per2 {
+  grid-area: per2;
+}
+
+.galeriaImagenes_5per4 {
+  grid-area: per4;
+}
+
+.galeriaImagenes_5per {
+  grid-area: per;
+}
+
+.galeriaImagenes_prin {
+  grid-area: prin;
+}
+
+.galeriaImagenes_prin3 {
+  grid-area: prin3;
+}
+
+.galeriaImagenes_prin6 {
+  grid-area: prin6;
+}
+
+.galeriaImagenes_7per3 {
+  grid-area: per3;
+}
+
+.galeriaImagenes_4per {
+  grid-area: per8;
+}
+
+.galeriaImagenes_prin2 {
+  grid-area: prin2;
+}
+
+.galeria_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.galeria2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat auto-fit, minmax(300px, 1fr);
+  grid-auto-rows: 150px;
+  grid-template-areas: "png2 piscina piscina parque" "png2 piscina piscina parque" "png6 png8 png4 png9" "png6 png8 png4 png9" "png11 png15 fon1 fon1" "png11 png15 fon1 fon1";
+  gap: 7px;
+}
+
+.galeriaCasa_1 {
+  grid-area: fon1;
+}
+
+.galeriaCasa_png2 {
+  grid-area: png2;
+}
+
+.galeriaCasa_png4 {
+  grid-area: png4;
+}
+
+.galeriaCasa_png8 {
+  grid-area: png8;
+}
+
+.galeriaCasa_png9 {
+  grid-area: png9;
+}
+
+.galeriaCasa_png15 {
+  grid-area: png15;
+}
+
+.galeriaCasa_parque {
+  grid-area: parque;
+}
+
+.galeriaCasa_piscina {
+  grid-area: piscina;
+}
+
+.galeriaCasa_png6 {
+  grid-area: png6;
+}
+
+.galeriaCasa_png11 {
+  grid-area: png11;
+}
+
+.galeria_img2 {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    grid-template-areas: "per2" "per4" "per" "prin" "prin2" "prin3" "prin6" "per3" "per5" "per8";
+  }
+  .galeria2 {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    grid-template-areas: "fon1" "png2" "png4" "png8" "png9" "png15" "parque" "piscina" "png6" "png11";
+  }
+}
 /*HISTORIA*/
-.SectionVideoHistoria{
-    height: 350px;
+.SectionVideoHistoria {
+  height: 350px;
 }
-.historiaH1{
-    font-family: 'Rochester', cursive;
-    font-size: 3.5rem;
-}
-.bgNuestroProposito{
-    background-color: #3e5521;
-}
-.imgSectionHistoria{
-    object-fit: cover;
-    border: 1px solid white;
-    padding: 15px;
-    height: 280px;
-    width: 95%;
-    margin-top: 0;
-}
-.parrafoProposito{
-    padding-left: 40px;
-}
-.imgRivera{    
-    width: 300px;
-    height: 300px;
-    padding: 4px;
-    margin: 4px;
-    border: 1px solid black;
-    border-radius: 10px;
-    object-fit: cover;
-}
-@media screen and (max-width: 768px){
-    .divSectionVideoHistoria{
-        flex-direction: column-reverse;
 
-    }
-    .parrafoProposito{
-        padding-left: 20px;
-    }
-    .divImgRivera{
-        flex-direction: column;
-    }
-    .contenedorFooter{
-        flex-direction: column-reverse;
-        .informacionFooter{
-            line-height: 15px;
-        }
-    }
-    
+.historiaH1 {
+  font-family: "Rochester", cursive;
+  font-size: 3.5rem;
 }
+
+.bgNuestroProposito {
+  background-color: #3e5521;
+}
+
+.imgSectionHistoria {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid white;
+  padding: 15px;
+  height: 280px;
+  width: 95%;
+  margin-top: 0;
+}
+
+.parrafoProposito {
+  padding-left: 40px;
+}
+
+.imgRivera {
+  width: 300px;
+  height: 300px;
+  padding: 4px;
+  margin: 4px;
+  border: 1px solid black;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .divSectionVideoHistoria {
+    flex-direction: column-reverse;
+  }
+  .parrafoProposito {
+    padding-left: 20px;
+  }
+  .divImgRivera {
+    flex-direction: column;
+  }
+  .contenedorFooter {
+    flex-direction: column-reverse;
+  }
+  .contenedorFooter .informacionFooter {
+    line-height: 15px;
+  }
+}/*# sourceMappingURL=estilos.css.map */
