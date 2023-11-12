@@ -1,0 +1,139 @@
+.fondoPrincipalIndex{
+    background:linear-gradient(to right, #0000005d, #0000005d ), url("../Assets/img/casa/casa_fondo\(4\).jpeg");
+    background-position: top center;
+    background-size: $object-fit;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    .tituloPrincipalIndex{
+        color:map-get($titulos, color);
+        font-size: map-get($titulos, fuente);
+        font-family: $fontfamily;    
+    }
+    .captionPrincipalIndex{         
+        color: map-get($titulos, color);
+        font-size: map-get($titulos, fuente2);
+    }    
+}
+.fondoCards{
+    height: 400px;
+    .card-img-top{
+        margin-top: 2rem;
+        height: 30%;
+        width: 130px;
+        object-fit: content;
+        border-radius: $border-radius;        
+    }
+    .card-body{
+        padding-top: 0.4rem;
+        .card-title{
+            text-align: center;
+            font-size: map-get($titulos, fuente2);
+            font-family: $fontfamily;
+        }
+        .card-text{
+            font-size: $fuente-normal;
+            width: 285px;
+            height: 100px;
+        }
+    }
+    .btnCardsIdex{
+        color: map-get($colores, color-fuente-botones);
+        font-size: $fuente-normal;
+        background-color: map-get($colores, botones-cafe);
+        border: 1px solid map-get($colores, botones-cafe);
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: map-get($colores, botones-hover);
+            border-color: map-get($colores, botones-hover);
+        }
+    }
+}
+.textoIntroduccionIndexDiv{
+    margin-top: 1.3rem;
+    background-color: map-get($colores, fondo-verde);
+    .textoIntroduccionIndex{
+        height: $height-trescientos;
+        display: flex;
+        font-size: $fuente-normal;
+        flex-direction: column;
+        padding-top: 40px;    
+        padding-left: 4rem;
+        padding-right: 4rem;
+        .btnIntroduccionIndex{
+            color: map-get($colores, color-fuente-botones);
+            font-size: $fuente-normal;
+            background-color: map-get($colores, botones-cafe);
+            border: 1px solid map-get($colores, botones-cafe);
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            &:hover{
+                background-color: map-get($colores, botones-hover);
+                border-color: map-get($colores, botones-hover);
+            }
+        }
+    }
+    .imgIntroduccionIndex{
+        height: $height-trescientos;
+        img{
+            object-fit: $object-fit;
+            height: 75%;
+            width: 75%;
+            border: 2px solid rgba(255, 255, 255, 0.582);
+            border-radius: $border-radius;
+            .cuadradoIndex{
+                background-color: transparent;
+                border: 2px solid rgba(255, 255, 255, 0.664);
+                width: 200px;
+                height: 100px;
+                position: absolute;
+                left: 10px;
+                top: 180px;
+            }
+            .cuadradoIndex2{
+                background-color: transparent;
+                border: 2px solid rgba(255, 255, 255, 0.664);
+                width: 200px;
+                height: 70px;
+                position: absolute;
+                right: 3rem;
+                top: 20px;
+            }
+        }
+    }
+}
+.carouselOpiniones1{    
+    height:55vh;
+    width: $width-completo;
+    align-items: center;
+    .carouselOpinionesIndex{
+        background-color: map-get($colores, fondo-blanco);
+        padding: 3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: $fuente-normal;
+        .parrafoOpinionesIndex{
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 768px){    
+    .carouselOpiniones1{
+        height: 70vh;
+        .carouselOpinionesIndex .parrafoOpinionesIndex{
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+    }    
+}
+

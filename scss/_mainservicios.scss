@@ -1,0 +1,60 @@
+.tituloServicios{
+    font-family: $fontfamily;
+    font-size: map-get($titulos, fuente);
+}
+.bgHabitaciones{
+    background-color: #783d19;
+    color: map-get($titulos, color);
+    .imgHabitacionesServicios{    
+        width: 300px;
+        height: $height-trescientos;
+        padding: 10px;
+        object-fit: $object-fit;
+        border-right: 2px solid rgba(255, 255, 255, 0.308);
+    }
+}
+.bgEventos{
+    background-color:map-get($colores, fondo-blanco);
+    .imgHabitacionesServicios1{    
+        @extend .imgHabitacionesServicios;
+        border-right: 2px solid rgba(156, 150, 150, 0.445);
+    }
+}
+.bgPasadia{
+    @extend .bgHabitaciones;
+}
+.btnServicios{
+    color: map-get($colores, color-fuente-botones);
+    font-size: $fuente-normal;
+    background-color: map-get($colores, fondo-verde);
+    border: 1px solid map-get($colores, fondo-verde);
+    width: 200px;
+    height: 40px;
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: map-get($colores, botones-hover);
+        border-color: map-get($colores, botones-hover);
+        color: map-get($colores, color-fuente-botones);
+    }
+}
+.beneficios h3{
+    font-family: $fontfamily;
+    font-size: map-get($titulos , fuente );
+}
+@media screen and (max-width: 768px){
+    .imgServicios{
+        flex-direction: column;
+    }
+    .bgHabitaciones .imgHabitacionesServicios{
+        border-right: 0;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.308);
+    }
+    .bgEventos .imgHabitacionesServicios1{
+        border-right: 0;
+        border-bottom: 2px solid rgba(156, 150, 150, 0.445)
+    }
+    
+}

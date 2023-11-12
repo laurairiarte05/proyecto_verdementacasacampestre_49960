@@ -1,0 +1,45 @@
+.fondoPrincipalContacto{
+    background:linear-gradient(to right, #0000008c, #0000008c), url("../Assets/img/casa/casa_piscina_fondo.jpg");
+    background-position: top center;
+    background-size: $object-fit;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    margin-bottom: 30px;
+    .tituloPrincipalContacto{
+        color:map-get($titulos, color);
+        font-size: map-get($titulos, fuente);
+        font-family: $fontfamily;        
+    }
+    .captionPrincipalContacto{         
+        color:map-get($titulos, color);
+        font-size: map-get($titulos, fuente2);
+    }    
+}
+.btnFormulario{
+    background-color: map-get($colores, botones-cafe);
+    border-color: map-get($colores, botones-cafe);
+    &:hover{
+        background-color: map-get($colores, botones-hover);
+        border-color: map-get($colores, botones-hover);
+    }
+}
+.beneficios h2{
+    font-size: map-get($titulos, fuente2);    
+    font-family: $fontfamily;
+}
+.logosImagenes{
+    margin-right: 8px;
+}
+@media screen and (max-width: 768px){
+        .tituloPrincipalContacto{
+            font-size: 40px;   
+        }
+        .fondoPrincipalContacto .captionPrincipalContacto{        
+            font-size: 20px;
+        } 
+    
+}

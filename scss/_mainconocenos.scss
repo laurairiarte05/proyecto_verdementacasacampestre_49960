@@ -1,0 +1,138 @@
+.tituloPrincipalGaleria{
+    background:linear-gradient(to right, #0000005d, #0000005d ), url("../Assets/img/casa/casa_fondo\ \(2\).jpg");
+    background-position: top center;
+    background-size: $object-fit;
+    background-repeat: no-repeat;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    color:map-get($titulos, color);
+    font-size: map-get($titulos, fuente);
+    font-family: $fontfamily;
+}
+.conocenosHabitaciones h2{
+    font-size: 35px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat (auto-fit, minmax($height-trescientos, 1fr));
+    grid-auto-rows: 150px;
+    grid-template-areas: "per2 per2 per4 per"
+                         "prin2 prin3 per4 per"
+                         "prin2 prin3 prin6 prin6"
+                         "prin2 prin3 prin6 prin6"
+                         "prin prin per3 per8"
+                         "prin prin per3 per8";
+    gap: 7px;
+}
+.galeriaImagenes_5per2{
+    grid-area: per2;
+}
+.galeriaImagenes_5per4{
+    grid-area: per4;
+}
+.galeriaImagenes_5per{
+    grid-area: per;
+}
+.galeriaImagenes_prin{
+    grid-area: prin;
+}
+.galeriaImagenes_prin3{
+    grid-area: prin3;
+}
+.galeriaImagenes_prin6{
+    grid-area: prin6;
+}
+.galeriaImagenes_7per3{
+    grid-area: per3;
+}
+.galeriaImagenes_4per{
+    grid-area: per8;
+}
+.galeriaImagenes_prin2{
+    grid-area: prin2;
+}
+.galeria_img{
+    width: $width-completo;
+    height: 100%;
+    object-fit: $object-fit;
+    border-radius: $border-radius;
+}
+.galeria2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);    
+    grid-template-columns: repeat (auto-fit, minmax($height-trescientos, 1fr));
+    grid-auto-rows: 150px; 
+    grid-template-areas: "png2 piscina piscina parque"
+                         "png2 piscina piscina parque"
+                         "png6 png8 png4 png9"
+                         "png6 png8 png4 png9"
+                         "png11 png15 fon1 fon1"
+                         "png11 png15 fon1 fon1";
+    gap: 7px;
+}
+.galeriaCasa_1{
+    grid-area: fon1;
+}
+.galeriaCasa_png2{
+    grid-area: png2;
+}
+.galeriaCasa_png4{
+    grid-area: png4;
+}
+.galeriaCasa_png8{
+    grid-area: png8;
+}
+.galeriaCasa_png9{
+    grid-area: png9;
+}
+.galeriaCasa_png15{
+    grid-area: png15;
+}
+.galeriaCasa_parque{
+    grid-area: parque;
+}
+.galeriaCasa_piscina{
+    grid-area: piscina;
+}
+.galeriaCasa_png6{
+    grid-area: png6;
+}
+.galeriaCasa_png11{
+    grid-area: png11;
+}
+.galeria_img2{
+    @extend .galeria_img;
+}
+@media screen and (max-width: 768px){
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-auto-rows: $height-trescientos;
+        grid-template-areas: "per2"
+                             "per4"
+                             "per"
+                             "prin"
+                             "prin2"
+                             "prin3"
+                             "prin6"
+                             "per3"
+                             "per8";
+    }
+    .galeria2{
+        grid-template-columns: 1fr;
+        grid-auto-rows: $height-trescientos;
+        grid-template-areas: "fon1"
+                             "png2"
+                             "png4"
+                             "png8"
+                             "png9"
+                             "png15"
+                             "parque"
+                             "piscina"
+                             "png6"
+                             "png11";
+    }
+}

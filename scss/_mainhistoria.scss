@@ -1,0 +1,49 @@
+.divSectionVideoHistoria{
+    .SectionVideoHistoria{
+        height: 350px;
+    }
+    .historiaH1{
+        font-family: $fontfamily;
+        font-size: map-get($titulos, fuente);
+    }
+}
+.bgNuestroProposito{
+    background-color: map-get($colores, fondo-verde);
+    .parrafoProposito{
+        padding-left: 40px;
+    }
+    h2{
+        font-family: $fontfamily;
+        font-size: map-get($titulos, fuente);
+    }    
+    .imgPropositoHistoria .imgSectionHistoria{
+        object-fit: $object-fit;
+        border: 1px solid map-get($colores, color-fuente-botones);
+        padding: 15px;
+        height: 280px;
+        width: 95%;
+        margin-top: 0;
+    }
+}
+.imgRivera{    
+    width: 300px;
+    height: $height-trescientos;
+    padding: 4px;
+    margin: 4px;
+    border: 1px solid black;
+    border-radius: $border-radius;
+    object-fit: $object-fit;
+}
+@media screen and (max-width: 768px){
+    .divSectionVideoHistoria{
+        flex-direction: column-reverse;
+
+    }
+    .parrafoProposito{
+        padding-left: 20px;
+    }
+    .divImgRivera{
+        flex-direction: column;
+    }
+    
+}

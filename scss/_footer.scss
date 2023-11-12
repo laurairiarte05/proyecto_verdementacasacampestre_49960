@@ -1,0 +1,59 @@
+@keyframes flotar{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0PX);
+    }
+}
+.bgFooter{
+    background-color: map-get($colores, fondo-verde);
+    width: $width-completo;
+    .divRedesFooter{
+        gap: 20px;
+        .imgRedesSocialesFooter{
+            width: 50px;
+            object-fit: $object-fit;
+            &:hover{
+                width: 50px;
+                object-fit: $object-fit;
+                animation-name: flotar;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+            }
+        }
+    }
+    .contenedorFooter{
+        width: $width-completo;
+        .btnMasInformacionFooter{
+            display: flex;
+            width: 200px;
+            height: 40px;
+            background-color: map-get($colores, botones-cafe);
+            border: 1px solid white;
+            border-radius: $border-radius;
+            color: map-get($colores, color-fuente-botones);
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            &:hover{
+                background-color: map-get($colores, botones-hover);
+                border-color: map-get($colores, botones-hover);
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .bgFooter .contenedorFooter{
+        flex-direction: column-reverse;
+        .informacionFooter{
+            line-height: 15px;
+        }
+    }
+    
+}
