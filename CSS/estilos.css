@@ -460,6 +460,97 @@ main {
     font-size: 20px;
   }
 }
+@keyframes rotarsilla {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(120deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(120deg);
+  }
+  90% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(120deg);
+  }
+}
+@keyframes cartelpeligro {
+  0% {
+    opacity: 0.5;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.diverror {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.diverror .divH {
+  height: 400px;
+}
+.diverror .divH .h1Error {
+  font-size: 380px;
+  height: 400px;
+  margin-bottom: 0;
+  color: rgba(128, 128, 128, 0.616);
+}
+.diverror .divImgError {
+  filter: drop-shadow(0 10px 7px rgba(0, 0, 0, 0.342));
+}
+.diverror .divImgError img {
+  width: 100%;
+  height: 300px;
+  animation: rotarsilla 3s forwards;
+  animation-timing-function: ease-in-out;
+}
+.diverror .imgPeligro {
+  position: absolute;
+  left: 360px;
+  height: 400px;
+  width: 600px;
+  opacity: 0;
+  animation: cartelpeligro 1s linear forwards;
+  animation-delay: 3s;
+}
+
+@media screen and (max-width: 768px) {
+  .diverror {
+    height: 250px;
+  }
+  .diverror .divH .h1Error {
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .diverror .divImgError img {
+    width: 200px;
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .diverror .imgPeligro {
+    width: 400px;
+    left: 30px;
+  }
+}
 @keyframes flotar {
   0% {
     transform: translateY(0px);
